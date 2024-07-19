@@ -1,0 +1,85 @@
+.filter-container {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .filter-container.closed {
+    transform: translateY(-100%);
+  }
+  
+  .filter-toggle {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .filter-section {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+  }
+  
+  .filter-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .filter-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .filter-item {
+    background-color: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-item.selected {
+    background-color: #4299e1;
+    color: white;
+  }
+  
+  .filter-item.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .filter-actions {
+    margin-top: 16px;
+  }
+  
+  .apply-filters,
+  .clear-filters {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .apply-filters:hover,
+  .clear-filters:hover {
+    background-color: #3182ce;
+  }
+  
